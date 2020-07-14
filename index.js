@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require('./config.json');
 
 var prefix = "!"
 var channelName = "ping-bot"
@@ -18,4 +17,4 @@ client.on("message", message => {
     }
 });
 
-client.login(config.TOKEN);
+client.login(process.env.TOKEN);
